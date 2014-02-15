@@ -7,13 +7,13 @@
         (tuple (: lfe-rest-client-conf user-agent)
                (: lfe-rest-client-conf user-agent-string))))
 
-(defun sync-request (method request-data)
+(defun async-request (method request-data)
   (: lfe-rest-client-util start-services)
   (let* ((http-options ())
          (options (list (tuple 'sync 'false))))
     (: httpc request method request-data http-options options)))
 
-(defun async-request (method request-data)
+(defun sync-request (method request-data)
   (: lfe-rest-client-util start-services)
   (let* ((http-options ())
          (options ()))

@@ -3,7 +3,7 @@
 
 ;; HTTP Header Names
 (defun content-type () '"Content-Type")
-(defun default-content-type '"application/json")
+(defun default-content-type () '"application/json")
 (defun user-agent () '"User-Agent")
 (defun x-auth-user () '"X-Auth-User")
 (defun x-auth-key () '"X-Auth-Key")

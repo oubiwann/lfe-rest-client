@@ -1,4 +1,4 @@
-(defmodule lfe-rest-client-utils
+(defmodule lfe-rest-client-util
   (export all)
   (import
     (from lfe-utils

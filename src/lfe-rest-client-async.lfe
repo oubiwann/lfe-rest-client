@@ -4,7 +4,7 @@
     (from lfe-rest-client
       (get-default-headers 1))
     (rename lfe-rest-client
-            (async-request 2) http)))
+            ((async-request 2) http))))
 
 (defun post (url payload)
   (let* ((content-type (: lfe-rest-client-conf default-content-type))
